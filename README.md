@@ -1,30 +1,31 @@
-# Raghunix Healthcare LLP — Website
+# RAGHUNIX ERP Portal
 
-A responsive, GitHub Pages-ready corporate website for Raghunix Healthcare LLP.
+GitHub Pages-ready frontend ERP prototype for Raghunix Healthcare LLP.
 
-## Stack
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No build step or framework required
+## Demo login
+- Email: `admin@raghunix.com`
+- Password: `admin123`
 
-## Run locally
-Open `index.html` in a browser, or use a local server:
+## Included
+- Admin login UI
+- Dashboard and KPI cards
+- Sales / POB creation
+- Customers
+- Stockists
+- Batch-wise inventory
+- Purchase summary
+- Sales team performance
+- Finance / outstanding ledger
+- Reports + CSV export
+- LocalStorage persistence
+- Responsive mobile navigation
 
-```bash
-python -m http.server 8000
-```
+## Deploy to GitHub Pages
+1. Upload all files in this folder to the repository root.
+2. GitHub → Settings → Pages.
+3. Source: **Deploy from a branch**.
+4. Branch: **main**, folder: **/(root)**.
+5. Save and open the generated Pages URL.
 
-Then open `http://localhost:8000`.
-
-## GitHub Pages
-1. Create a new GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Select **Deploy from a branch**, choose `main` and `/root`.
-5. Save. GitHub will publish the site.
-
-## Before production
-- Connect the contact form to your backend/email provider.
-- Replace placeholder product copy/details with your approved product catalogue.
-- Add privacy policy, terms, GST/company details and any required regulatory disclosures.
+## Important
+This version is a functional **frontend prototype**. Login and data are stored in the browser (sessionStorage/localStorage), so it is not suitable for real production credentials or multi-user data. For production, connect it to a backend/database such as Supabase, Firebase, or a custom API and implement server-side authentication/authorization.
